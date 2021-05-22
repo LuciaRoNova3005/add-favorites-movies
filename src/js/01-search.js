@@ -1,4 +1,6 @@
-button.addEventListener("click");
+searchButton.addEventListener("click", handlerSearch);
 
-
-function ();
+function handlerSearch() {
+  const url = search.value;
+  console.log(url);
+}
