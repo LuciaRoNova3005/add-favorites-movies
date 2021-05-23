@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";console.log(">> Ready :)");const searchButton=document.querySelector(".js-button"),search=document.querySelector(".js-search");function handlerSearch(){const e="http://api.tvmaze.com/search/shows?q="+search.value.toLowerCase();console.log(e),fetch(e).then(e=>e.json()).then(e=>{console.log(e)})}searchButton.addEventListener("click",handlerSearch);
