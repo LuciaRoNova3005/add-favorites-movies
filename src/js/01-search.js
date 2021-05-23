@@ -6,7 +6,10 @@ function handlerSearch() {
   console.log(url);
   fetch(url)
     .then((result) => result.json())
-    .then((series) => {
-      console.log(series);
+    .then((data) => {
+      for (let i = 0; i < data.length; i++) {
+        let nameShow = data[i].show.name;
+        showcontainer.innerHTML += `<h2>${nameShow}</h2>`;
+      }
     });
 }
