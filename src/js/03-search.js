@@ -10,5 +10,6 @@ function handlerSearch() {
       console.log(showsData);
       renderShows(showsData);
     })
+
     .catch((error) => console.log("Inténtalo de nuevo más tarde", error));
 }
