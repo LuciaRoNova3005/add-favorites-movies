@@ -7,7 +7,7 @@ function addListenShow() {
 
 function handleClickFav(event) {
   const selectCard = event.target;
-  const whereIAddedTheEvent = event.currentTarget;
+  const allResultShows = event.currentTarget;
 
-  whereIAddedTheEvent.classList.toggle("favorite");
+  allResultShows.classList.toggle("favorite");
 }
