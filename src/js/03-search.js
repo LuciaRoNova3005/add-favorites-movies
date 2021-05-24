@@ -1,6 +1,3 @@
-let arrayShows = [];
-let arrayFavorite = [];
-
 function handlerSearch() {
   const wordSearch = search.value.toLowerCase();
   const url = `//api.tvmaze.com/search/shows?q=${wordSearch}`;
@@ -9,7 +6,9 @@ function handlerSearch() {
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
       arrayShows = showsData;
+      //almaceno en showsData
 
+      //Pinto el array//
       renderShows(arrayShows);
     })
 

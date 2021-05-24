@@ -4,38 +4,25 @@ function addListenShow() {
     card.addEventListener("click", handleClickFav);
   }
 }
-
 function handleClickFav(event) {
   // Identificar la li pulsada
   const selectCardFav = event.currentTarget;
-  // Añado la clase de fav
-  //selectCardFav.classList.toggle("favorite");
-
   // Obtener la información asociada a la serie
+  const filmId = parseInt(selectCardFav.dataset.id);
+  //Buscamos si elemento clicado esta en nuestro array de favoritos
+  const idExist = arrayFavorite.find(
+    (favoritedata) => favoritedata.show.id === filmId
+  );
 
-  const showId = parseInt(selectCardFav.dataset.id);
+  if (idExist === undefined) {
+    // El ID del array en el que se ha hecho click no está en el array de favoritos lo añade
+    const Objseriedata = arrayShows.find(
+      (seriedata) => seriedata.show.id === filmId
+    );
+    arrayFavorite.push(Objseriedata);
+  } else {
+    arrayFavorite = arrayFavorite.filter((fav) => fav.show.id !== filmId);
+  }
 
-  // si la serie clickada está en favoritos
-  /*arrayFavorite.find((fav) => {
-    debugger;
-    return false;
-  });*/
-  // - la quito
-  // - si no la guardo
-  const foundShow = arrayShows.find((show) => {
-    //console.log(showId, show.show.id);
-    if (showId === show.show.id) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  arrayFavorite.push(foundShow);
-
-  renderShows();
-  // pintamos los favoritos
-  // guardamos los favoritos en local storage
   console.log(arrayFavorite);
-  //localStorage.setItem("show", JSON.stringify(selectCardFav));
-  //arrayFavorite = parse.JSON(localStorage.getItem("show", selectCardFav));
 }
