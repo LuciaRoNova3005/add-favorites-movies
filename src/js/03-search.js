@@ -5,7 +5,7 @@ let favorite = [];
 
 function handlerSearch() {
   const wordSearch = search.value.toLowerCase();
-  const url = `http://api.tvmaze.com/search/shows?q=${wordSearch}`;
+  const url = `//api.tvmaze.com/search/shows?q=q=${wordSearch}`;
   console.log(url);
   fetch(url)
     .then((resultShow) => resultShow.json())
