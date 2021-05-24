@@ -1,9 +1,13 @@
 function renderShows() {
   let listHtml = "";
   for (const titleshow of arrayShows) {
-    const isFav = true;
-    console.log(isFav);
-    if (isFav) {
+    // Obtener la información asociada a la serie
+    // Buscar si la tarjeta clickada está en el array de favoritos
+    const idExist = arrayFavorite.find(
+      (favoritedata) => favoritedata.show.id === titleshow.show.id
+    );
+    // Si la tarjeta en la que hacemos click no está en el array de favoritos me añades la clase//
+    if (idExist !== undefined) {
       listHtml += `<li  data-id="${titleshow.show.id}" class="js-shows favorite">`;
     } else {
       listHtml += `<li data-id="${titleshow.show.id}" class="js-shows">`;
@@ -17,5 +21,6 @@ function renderShows() {
     listHtml += `</li>`;
   }
   showcontainer.innerHTML = listHtml;
+
   addListenShow();
 }

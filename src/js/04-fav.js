@@ -25,6 +25,6 @@ function handleClickFav(event) {
   } else {
     arrayFavorite = arrayFavorite.filter((fav) => fav.show.id !== filmId);
   }
-
+  renderFavorites(arrayFavorite);
   console.log(arrayFavorite);
 }
