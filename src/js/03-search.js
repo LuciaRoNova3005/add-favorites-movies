@@ -1,7 +1,5 @@
-searchButton.addEventListener("click", handlerSearch);
-
-let globalShows = [];
-let favorite = [];
+let arrayShows = [];
+let arrayFavorite = [];
 
 function handlerSearch() {
   const wordSearch = search.value.toLowerCase();
@@ -10,10 +8,11 @@ function handlerSearch() {
   fetch(url)
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
-      globalShows = showsData;
-      localStorage.setItem("show", JSON.stringify(globalShows));
-      renderShows(globalShows);
+      arrayShows = showsData;
+
+      renderShows(arrayShows);
     })
 
     .catch((error) => console.log("Inténtalo de nuevo más tarde", error));
 }
+searchButton.addEventListener("click", handlerSearch);
