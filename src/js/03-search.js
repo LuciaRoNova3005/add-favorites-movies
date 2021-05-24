@@ -5,14 +5,13 @@ let favorite = [];
 
 function handlerSearch() {
   const wordSearch = search.value.toLowerCase();
-  const url = `//api.tvmaze.com/search/shows?q=q=${wordSearch}`;
+  const url = `//api.tvmaze.com/search/shows?q=${wordSearch}`;
   console.log(url);
   fetch(url)
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
       globalShows = showsData;
       localStorage.setItem("show", JSON.stringify(globalShows));
-      console.log(globalShows);
       renderShows(globalShows);
     })
 
