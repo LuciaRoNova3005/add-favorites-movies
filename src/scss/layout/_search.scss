@@ -2,7 +2,8 @@
   background-color: red;
 }
 .container-input {
-  margin: 30px;
+  margin-left: 30px;
+
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -10,7 +11,10 @@
 .button {
   margin-left: 30px;
 }
-.search-result {
+.section-fav {
+  margin: auto;
   display: flex;
   flex: row;
+  justify-items: center;
+  justify-content: space-around;
 }

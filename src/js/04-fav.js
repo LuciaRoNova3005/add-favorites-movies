@@ -20,6 +20,8 @@ function handleClickFav(event) {
       (seriedata) => seriedata.show.id === filmId
     );
     arrayFavorite.push(Objseriedata);
+
+    // El ID del array en el que se ha hecho click esta en el array de favoritos hace un filtro para eliminarlo
   } else {
     arrayFavorite = arrayFavorite.filter((fav) => fav.show.id !== filmId);
   }

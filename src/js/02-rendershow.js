@@ -1,9 +1,10 @@
 function renderShows() {
   let listHtml = "";
   for (const titleshow of arrayShows) {
-    const isFav = false;
+    const isFav = true;
+    console.log(isFav);
     if (isFav) {
-      listHtml += `<li data-id="${titleshow.show.id}" class="js-shows favorite">`;
+      listHtml += `<li  data-id="${titleshow.show.id}" class="js-shows favorite">`;
     } else {
       listHtml += `<li data-id="${titleshow.show.id}" class="js-shows">`;
     }

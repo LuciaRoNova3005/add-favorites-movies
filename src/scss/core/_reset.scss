@@ -1,12 +1,14 @@
 :root {
   font-size: 16px;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   line-height: 1;
+  background-color: lightgray;
 }
 
 p,
@@ -20,4 +22,7 @@ ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+ul {
+  list-style: none;
 }

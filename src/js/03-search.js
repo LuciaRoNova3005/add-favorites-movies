@@ -1,7 +1,6 @@
 function handlerSearch() {
   const wordSearch = search.value.toLowerCase();
   const url = `//api.tvmaze.com/search/shows?q=${wordSearch}`;
-  console.log(url);
   fetch(url)
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
