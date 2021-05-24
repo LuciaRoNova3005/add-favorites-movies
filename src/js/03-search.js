@@ -1,5 +1,8 @@
 searchButton.addEventListener("click", handlerSearch);
 
+let globalShows = [];
+let favorite = [];
+
 function handlerSearch() {
   const wordSearch = search.value.toLowerCase();
   const url = `http://api.tvmaze.com/search/shows?q=${wordSearch}`;
@@ -7,8 +10,10 @@ function handlerSearch() {
   fetch(url)
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
-      console.log(showsData);
-      renderShows(showsData);
+      globalShows = showsData;
+      localStorage.setItem("show", JSON.stringify(globalShows));
+      console.log(globalShows);
+      renderShows(globalShows);
     })
 
     .catch((error) => console.log("Inténtalo de nuevo más tarde", error));
