@@ -3,6 +3,7 @@ function renderShows() {
   for (const titleshow of arrayShows) {
     // Obtener la información asociada a la serie
     // Buscar si la tarjeta clickada está en el array de favoritos
+
     const idExist = arrayFavorite.find(
       (favoritedata) => favoritedata.show.id === titleshow.show.id
     );

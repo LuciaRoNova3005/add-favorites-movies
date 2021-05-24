@@ -1,5 +1,10 @@
 .favorite {
-  background-color: red;
+  background-color: black;
+}
+.search-fav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .container-input {
   margin-left: 30px;
