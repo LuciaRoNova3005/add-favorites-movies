@@ -18,6 +18,39 @@ Por último, ejecuta el siguiente comando para que cargue un servidor local y po
 
 NOTA: Es necesario tener instalado NodeJS
 
+## Flujo de archivos con Gulp
+
+Estas tareas de Gulp producen el siguiente flujo de archivos:
+
+![Gulp flow](./gulp-flow.png)
+
+## `gulpfile.js` y `config.json`
+
+Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
+
+De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
+
+## Estructura de carpetas
+
+La estructura de carpetas:
+
+```
+src
+ ├─ images
+ ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
+ |  ├─ main.js
+ |      └─ 00-constans.js
+        └─ 02-rendershow.js
+        └─ 03-search.js
+        └─ 04-fav.js
+        └─ 05-renderFav.js
+ ├─ scss
+ |  ├─ core
+ |  ├─ layout
+ └─ html
+    └─ partials
+```
+
 ## Enunciado y requisitos del ejercicio
 
 El ejercicio consiste en desarrollar una aplicación web de búsqueda de series de TV, que nos permite des/marcar las series como favoritas y guardarlas en local storage. El ejercicio también tiene una parte de maquetación con HTML y Sass.
