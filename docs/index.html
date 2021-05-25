@@ -4,17 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Evalución FInal Lucía Rodríguez Nova</title>
+    <title>Evaluación Final Lucía Rodríguez Nova,</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="shortcut icon" href="./assets/images/favicon.png" />
   </head>
   <body>
-    <h1>Buscador de series</h1>
-    <form action="" method="post">
-      <input type="text" id="search" name="search" value="" class="js-search" />
-    </form>
-    <button class="js-button">BUSCAR</button>
+    <header class="header">
+      <h1>Buscador de series</h1>
+    </header>
 
+    <main>
+      <div class="search">
+        <h3 class="title3">Mis favoritos</h3>
+        <div class="container-input">
+          <form action="" method="post" class="form">
+            <input type="text" id="search" name="search" value="" class="js-search" />
+          </form>
+          <button class="js-button button">BUSCAR</button>
+        </div>
+      </div>
+
+      <section class="container-fav">
+        <div class="section-fav">
+          <ul class="js-favoritelist"></ul>
+          <ul class="js-showlist"></ul>
+        </div>
+      </section>
+
+    </main>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
