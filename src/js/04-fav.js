@@ -1,6 +1,6 @@
 //Si el array que guarda la informacion del local tiene contenido me ejecutas Recupero los datos y lo pinto
 
-//Funcion que escucha click en las peliculas//
+//Funcion que escucha click en las peliculas y en las peliculas de favoritas con la js-shows//
 function addListenShow() {
   const cardShows = document.querySelectorAll(".js-shows");
   for (const card of cardShows) {

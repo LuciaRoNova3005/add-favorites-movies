@@ -11,7 +11,7 @@ function renderFavorites() {
       listFavorite += `<img src="https://via.placeholder.com/210x295/ffffff/666666/?text=TV" alt="">`;
     }
     listFavorite += `<h2>${favfilm.show.name}</h2>`;
-    listFavorite += `<button data-id="${favfilm.show.id}"  class="js-shows">Borrar este favorito</button>`;
+    listFavorite += `<div data-id="${favfilm.show.id}"  class="js-shows container-delete"><p class="text">Elimina</p></div>`;
     listFavorite += `</li>`;
   }
   favoritecontainer.innerHTML = listFavorite;
