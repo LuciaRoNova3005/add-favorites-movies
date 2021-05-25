@@ -21,5 +21,5 @@ function handleClickDeleteFav(event) {
   } else {
     arrayFavorite = arrayFavorite.filter((fav) => fav.show.id !== favId);
   }
-  renderFavorites(arrayFavorite);
+  renderFavorites();
 }

@@ -1,7 +1,5 @@
 //Si el array que guarda la informacion del local tiene contenido me ejecutas Recupero los datos y lo pinto
-if (arrayLocal !== null) {
-  getFavLocal();
-}
+
 //Funcion que escucha click en las peliculas//
 function addListenShow() {
   const cardShows = document.querySelectorAll(".js-shows");
@@ -31,6 +29,7 @@ function handleClickFav(event) {
     arrayFavorite = arrayFavorite.filter((fav) => fav.show.id !== filmId);
   }
   // Pinta las tarjetas en favoritas y las guarda en local
-  renderFavorites(arrayFavorite);
+  renderFavorites();
+  renderShows();
   savedFav();
 }
