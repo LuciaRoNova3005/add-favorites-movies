@@ -5,3 +5,4 @@ const showcontainer = document.querySelector(".js-showlist");
 const favoritecontainer = document.querySelector(".js-favoritelist");
 let arrayShows = [];
 let arrayFavorite = [];
+let arrayLocal = [];

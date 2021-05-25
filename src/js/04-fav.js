@@ -1,3 +1,7 @@
+if (arrayLocal !== null) {
+  getFavLocal();
+}
+
 function addListenShow() {
   const cardShows = document.querySelectorAll(".js-shows");
   for (const card of cardShows) {
@@ -26,5 +30,5 @@ function handleClickFav(event) {
     arrayFavorite = arrayFavorite.filter((fav) => fav.show.id !== filmId);
   }
   renderFavorites(arrayFavorite);
-  console.log(arrayFavorite);
+  savedFav();
 }
