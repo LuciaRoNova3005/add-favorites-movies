@@ -7,8 +7,6 @@
   justify-content: space-around;
 }
 .container-input {
-  margin-left: 30px;
-
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -16,10 +14,16 @@
 .button {
   margin-left: 30px;
 }
+
 .section-fav {
-  margin: auto;
   display: flex;
   flex: row;
   justify-items: center;
   justify-content: space-around;
+}
+.show {
+  padding: 10px;
+}
+.fav {
+  padding: 10px;
 }

@@ -1,7 +1,7 @@
 function renderFavorites() {
   let listFavorite = "";
   for (const favfilm of arrayFavorite) {
-    listFavorite += `<li  data-id="${favfilm.show.id}" class="">`;
+    listFavorite += `<li  data-id="${favfilm.show.id}" class="fav">`;
     if (favfilm.show.image !== null) {
       listFavorite += `<img src="${favfilm.show.image.medium}" alt="">`;
     } else {

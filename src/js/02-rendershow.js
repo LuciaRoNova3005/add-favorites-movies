@@ -9,9 +9,9 @@ function renderShows() {
     );
     // Si la tarjeta en la que hacemos click no está en el array de favoritos me añades la clase//
     if (idExist !== undefined) {
-      listHtml += `<li  data-id="${titleshow.show.id}" class="js-shows favorite">`;
+      listHtml += `<li  data-id="${titleshow.show.id}" class="js-shows favorite show">`;
     } else {
-      listHtml += `<li data-id="${titleshow.show.id}" class="js-shows">`;
+      listHtml += `<li data-id="${titleshow.show.id}" class="js-shows show">`;
     }
     if (titleshow.show.image !== null) {
       listHtml += `<img src="${titleshow.show.image.medium}" alt="">`;
