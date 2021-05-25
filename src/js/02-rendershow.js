@@ -13,9 +13,9 @@ function renderShows() {
       listHtml += `<li data-id="${titleshow.show.id}" class="js-shows show">`;
     }
     if (titleshow.show.image !== null) {
-      listHtml += `<img src="${titleshow.show.image.medium}" alt="">`;
+      listHtml += `<img src="${titleshow.show.image.medium}" alt="${titleshow.show.name}">`;
     } else {
-      listHtml += `<img src="https://via.placeholder.com/210x295/ffffff/666666/?text=TV" alt="">`;
+      listHtml += `<img src="https://via.placeholder.com/210x295/ffffff/666666/?text=TV" alt="${titleshow.show.name}">`;
     }
     listHtml += `<h2>${titleshow.show.name}</h2>`;
     listHtml += `</li>`;
