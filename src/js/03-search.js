@@ -5,12 +5,12 @@ function handlerSearch() {
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
       arrayShows = showsData;
-      //almaceno en showsData
-
       //Pinto el array//
       renderShows(arrayShows);
     })
 
     .catch((error) => console.log("Inténtalo de nuevo más tarde", error));
 }
+
+//Escucha el boton el click y ejecuta la función del fecth y esta pinta las peliculas//
 searchButton.addEventListener("click", handlerSearch);

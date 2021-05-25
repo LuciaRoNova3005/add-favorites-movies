@@ -1,7 +1,9 @@
+//Pinta las tarjetas de favoritos se ejecuta con el click en la tarjeta
+
 function renderFavorites() {
   let listFavorite = "";
   for (const favfilm of arrayFavorite) {
-    listFavorite += `<li  data-id="${favfilm.show.id}" class="fav">`;
+    listFavorite += `<li  data-id="${favfilm.show.id}" class="fav js-fav">`;
     if (favfilm.show.image !== null) {
       listFavorite += `<img src="${favfilm.show.image.medium}" alt="">`;
     } else {
