@@ -1,8 +1,29 @@
 # modulo-2-evaluacion-final-LuciaRoNova3005
 
-modulo-2-evaluacion-final-LuciaRoNova3005 created by GitHub Classroom
-Visualización en local
-Para poder realizar un arranque en local de este proyecto, se debe emplear el Adalab - Web starter kit, ya que ha sido el sistema creado por Adalab y sus profesores, gracias al cual, con NodeJS y Gulp, podemos implementar el desarrollo más sencillo e intuitivo del trabajo y su posible visualización en local. Para ello:
+# ¿En qué consiste este proyecto?
+
+![image](https://user-images.githubusercontent.com/81588630/124917070-ad271a00-dff3-11eb-93da-7f0f29de3a25.png)
+
+
+# Aplicación de búsqueda
+La aplicación de búsqueda de series consta de dos partes:
+
+. Un campo de texto y un botón para buscar series por su título.
+. Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.
+
+## Favoritos
+Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son nuestras series
+favoritas. Para ello, al hacer clic sobre una serie debe pasar lo siguiente:
+El color de fondo y el de fuente se intercambian, indicando que es una serie favorita.
+Hay que mostrar un listado en la parte izquierda de la pantalla, debajo del formulario de búsqueda,
+con las series favoritas. Os recomendamos crear un variable o constante de tipo array en JS para
+almacenar las series favoritas.
+Las series favoritas deben seguir apareciendo a la izquierda aunque la usuaria realice otra búsqueda.
+
+## Almacenamiento local
+
+
+# ¿Quieres trabajar en este repositorio? 
 
 ## Clona este repositorio en tu equipo.
 
