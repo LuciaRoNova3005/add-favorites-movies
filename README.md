@@ -1,4 +1,4 @@
-# modulo-2-evaluacion-final-LuciaRoNova3005
+# Add Favorites Movies
 
 # ¿En qué consiste este proyecto?
 
