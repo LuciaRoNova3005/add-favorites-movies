@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 .favorite {
-  background-color: lightsalmon;
+  background-color: $color-secondary;
   margin: 10px;
 }
 .container-delete {
@@ -14,7 +14,7 @@
   border-radius: 5px;
 }
 .text {
-  font-family: "Montserrat";
+  font-family: $font-main;
   font-weight: bold;
 }
 .fav {
