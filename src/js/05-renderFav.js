@@ -1,5 +1,3 @@
-//Pinta las tarjetas de favoritos se ejecuta con el click en la tarjeta
-
 function renderFavorites() {
   let listFavorite = "";
   for (const favfilm of arrayFavorite) {
