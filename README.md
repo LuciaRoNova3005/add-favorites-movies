@@ -98,5 +98,5 @@ Poder añadir/quitar como favorito al hacer clic sobre una serie del lado de la 
 Incluir al final de la lista de favoritos un botón para borrar todos los favoritos a la vez.
 BONUS: Afinar la maquetación Una vez terminada la parte de interacción, podemos centrarnos en la parte de maquetación donde tenemos libertad para decidir los estilos.
 
-¿Consideras que puedo aplicar alguna mejora?
+### ¿Consideras que puedo aplicar alguna mejora?
 Si has detectado un problema o consideras que alguna cosa puede mejorarse, estaría encantada de que habras un nuevo issue y conocer tu opinión, cada mejora es importante, muchas gracias.
