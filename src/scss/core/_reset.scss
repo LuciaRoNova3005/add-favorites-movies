@@ -1,14 +1,15 @@
 :root {
   font-size: 16px;
   box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Noto Sans Mono", monospace;
+  color: white;
 }
 
 body {
   margin: 0;
   padding: 0;
   line-height: 1;
-  background-color: $color-primary;
+  background-color: $color-secondary;
 }
 
 p,

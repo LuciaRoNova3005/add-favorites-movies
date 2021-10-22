@@ -5,17 +5,18 @@
   text-decoration: none;
 }
 .favorite {
-  background-color: $color-secondary;
+  background-color: #1f1f20;
   margin: 10px;
 }
 .container-delete {
-  background-color: white;
+  background-color: $color-primary;
   text-align: center;
   border-radius: 5px;
 }
 .text {
   font-family: $font-main;
   font-weight: bold;
+  color: black;
 }
 .fav {
   margin: 10px;
