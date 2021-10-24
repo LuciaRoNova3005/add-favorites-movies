@@ -8,7 +8,7 @@ function renderShows() {
     if (idExist !== undefined) {
       listHtml += `<li data-id="${titleshow.show.id}" class="js-shows favorite show">`;
     } else {
-      listHtml += `<li data-id="${titleshow.show.id}" class="js-shows show">`;
+      listHtml += `<li data-id="${titleshow.show.id}" class="js-shows show"> <i class="far fa-thumbs-up"></i>`;
     }
     if (titleshow.show.image !== null) {
       listHtml += `<img src="${titleshow.show.image.medium}" alt="${titleshow.show.name}">`;
