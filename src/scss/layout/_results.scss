@@ -1,5 +1,9 @@
 .showlist {
+  margin: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .fa-thumbs-up {
   color: white;
