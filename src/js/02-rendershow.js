@@ -6,7 +6,7 @@ function renderShows() {
     );
 
     if (idExist !== undefined) {
-      listHtml += `<li data-id="${titleshow.show.id}" class="js-shows favorite show">`;
+      listHtml += `<li data-id="${titleshow.show.id}" class="js-shows favorite show"> <i class="fas fa-thumbs-up"></i>`;
     } else {
       listHtml += `<li data-id="${titleshow.show.id}" class="js-shows show"> <i class="far fa-thumbs-up"></i>`;
     }
