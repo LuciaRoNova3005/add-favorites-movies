@@ -1,3 +1,6 @@
+.container-fav {
+  margin: 10px;
+}
 .section-fav {
   border: solid 2px darkgray;
   background-color: black;
@@ -9,11 +12,12 @@
 .favoritelist {
   display: flex;
   flex-direction: column;
-  align-items: left;
-
+  text-align: center;
+  align-items: center;
   margin: 3px;
 }
 .fav {
+  padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,5 +29,7 @@
 .fav-tittle2 {
   font-size: 14px;
   margin: 0 5px 0 5px;
-  display: flex;
+  @include tablet {
+    font-size: 20px;
+  }
 }

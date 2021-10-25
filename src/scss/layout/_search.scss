@@ -5,12 +5,16 @@
   &--containerinput {
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    align-items: center;
     font-family: $font-main;
   }
   &--form {
     padding: 5px;
+    font-size: 14px;
+    @include tablet {
+      width: 40vh;
+      padding: 10px;
+      font-size: 20px;
+    }
   }
   &--button {
     margin-left: 30px;
@@ -20,22 +24,11 @@
     border-radius: 5px;
     border-color: grey;
     padding: 5px;
+    background-color: rgb(198, 255, 85);
+
+    @include tablet {
+      padding: 5px;
+      font-size: 20px;
+    }
   }
-}
-
-.section-fav {
-  display: flex;
-  flex: row;
-  justify-items: center;
-  justify-content: space-around;
-}
-.show {
-  padding: 10px;
-}
-.fav {
-  padding: 10px;
-}
-
-.favoritelist {
-  text-align: center;
 }

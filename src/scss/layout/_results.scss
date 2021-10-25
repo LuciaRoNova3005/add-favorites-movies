@@ -1,25 +1,57 @@
 .showlist {
   margin: 40px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+  }
 }
 .favorite {
   display: flex;
   flex-direction: column;
   position: relative;
   color: rgb(198, 255, 85);
+  @include tablet {
+  }
+  position: static;
+  @include desktop {
+  }
 }
 .show {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 10px;
+
+  @include tablet {
+    position: static;
+    margin: 20px;
+    background-color: rgb(19, 19, 18);
+  }
+
+  @include desktop {
+    background-color: blue;
+  }
 }
 .fa-thumbs-up {
   position: relative;
   z-index: 20;
   margin: 5px;
+  @include tablet {
+    font-size: 30px;
+  }
+
+  @include desktop {
+  }
 }
 .imagen {
   width: 110px;
   position: absolute;
+  @include tablet {
+    width: 200px;
+    position: static;
+  }
 }
 .tittle2 {
   font-size: 14px;
@@ -27,4 +59,11 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
   margin-top: 99px;
+  @include tablet {
+    position: static;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  @include desktop {
+  }
 }
