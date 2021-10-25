@@ -1,36 +1,29 @@
-.fav {
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-.imagenFav {
-  height: 30px;
-}
-.favoritelist {
-  align-items: center;
-  background-color: yellowgreen;
+.section-fav {
+  border: solid 2px darkgray;
+  background-color: black;
 }
 .title3 {
   font-size: 18px;
+  text-align: center;
+}
+.favoritelist {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  margin: 3px;
+}
+.fav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imagenFav {
+  height: 30px;
 }
 .fav-tittle2 {
   font-size: 14px;
-}
-.js-shows {
-  text-decoration: none;
-}
-
-.container-delete {
-  background-color: $color-primary;
-  text-align: center;
-  border-radius: 5px;
-}
-.text {
-  font-family: $font-main;
-  font-size: 14px;
-  font-weight: bold;
-  color: black;
-}
-.fav {
-  margin: 10px;
+  margin: 0 5px 0 5px;
+  display: flex;
 }
