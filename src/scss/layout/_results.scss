@@ -1,5 +1,5 @@
 .showlist {
-  margin: 40px;
+  margin: 30px;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +31,6 @@
   }
 
   @include desktop {
-    background-color: blue;
   }
 }
 .fa-thumbs-up {
@@ -61,7 +60,7 @@
   margin-top: 99px;
   @include tablet {
     position: static;
-    margin-top: 0px;
+    margin-top: 5px;
     font-size: 20px;
   }
   @include desktop {

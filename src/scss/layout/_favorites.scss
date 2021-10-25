@@ -1,5 +1,9 @@
 .container-fav {
-  margin: 10px;
+  margin: 20px;
+
+  @include desktop {
+    margin: 30px;
+  }
 }
 .section-fav {
   border: solid 2px darkgray;
@@ -12,9 +16,15 @@
 .favoritelist {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   margin: 3px;
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+  }
 }
 .fav {
   padding: 10px;
@@ -25,11 +35,24 @@
 
 .imagenFav {
   height: 30px;
+  @include tablet {
+  }
+  @include desktop {
+    height: 100px;
+  }
 }
 .fav-tittle2 {
   font-size: 14px;
   margin: 0 5px 0 5px;
   @include tablet {
     font-size: 20px;
+  }
+}
+.title3 {
+  @include tablet {
+    font-size: 24px;
+  }
+  @include desktop {
+    font-size: 30px;
   }
 }
