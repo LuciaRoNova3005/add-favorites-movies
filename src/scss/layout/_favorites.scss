@@ -14,7 +14,6 @@
   align-items: center;
   margin: 3px;
   background-color: lightseagreen;
-
   @include desktop {
     display: flex;
     flex-direction: row;
@@ -26,6 +25,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+  }
 }
 
 .imagenFav {
@@ -46,7 +50,7 @@
 .title3 {
   font-size: 18px;
   text-align: center;
-  color: lightseagreen;
+  color: white;
   font-weight: bold;
 
   @include tablet {
