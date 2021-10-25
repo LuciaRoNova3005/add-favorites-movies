@@ -1,5 +1,20 @@
-.section-fav {
-  margin: 30px;
+.fav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.imagenFav {
+  height: 30px;
+}
+.favoritelist {
+  align-items: center;
+  background-color: yellowgreen;
+}
+.title3 {
+  font-size: 18px;
+}
+.fav-tittle2 {
+  font-size: 14px;
 }
 .js-shows {
   text-decoration: none;
@@ -12,12 +27,10 @@
 }
 .text {
   font-family: $font-main;
+  font-size: 14px;
   font-weight: bold;
   color: black;
 }
 .fav {
   margin: 10px;
-}
-h2 {
-  font-size: 20px;
 }
