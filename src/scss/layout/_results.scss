@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  color: rgb(198, 255, 85);
+
   @include tablet {
   }
   position: static;
@@ -37,6 +37,8 @@
   position: relative;
   z-index: 20;
   margin: 5px;
+  color: rgba(59, 231, 223, 0.911);
+
   @include tablet {
     font-size: 30px;
   }

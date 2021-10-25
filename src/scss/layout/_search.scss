@@ -19,12 +19,13 @@
   &--button {
     margin-left: 30px;
     font-family: $font-main;
+    color: white;
     font-weight: bold;
     background-color: $color-primary;
     border-radius: 5px;
     border-color: grey;
     padding: 5px;
-    background-color: rgb(198, 255, 85);
+    background-color: lightseagreen;
 
     @include tablet {
       padding: 5px;
