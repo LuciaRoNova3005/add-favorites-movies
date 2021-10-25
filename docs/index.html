@@ -9,18 +9,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&family=Open+Sans:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="shortcut icon" href="./assets/images/favicon.png" />
   </head>
   <body>
     <header class="header">
-      <h1>Buscador de series</h1>
+      <h1 class="tittle">Buscador de series</h1>
     </header>
 
     <main>
       <div class="search">
-        <h2 class="title3">Mis favoritos</h2>
-        <div class="container-input">
+        <div class="search--containerinput">
           <form action="" method="post" class="form">
             <input
               type="text"
@@ -28,20 +39,26 @@
               name="search"
               placeholder="Nombre de la serie"
               value=""
-              class="js-search"
+              class="search--form js-search"
             />
           </form>
-          <button class="js-button button">BUSCAR</button>
+          <button class="js-button search--button">BUSCAR</button>
         </div>
       </div>
 
-      <section class="container-fav">
-        <div class="section-fav">
-          <ul class="js-favoritelist favoritelist"></ul>
+      <div class="container">
+        <section class="showcontainer">
           <ul class="js-showlist showlist"></ul>
-        </div>
-      </section>
+        </section>
 
+        <section class="container-fav">
+          <h2 class="title3">Favoritos</h2>
+          <div class="section-fav">
+            <ul class="js-favoritelist favoritelist"></ul>
+          </div>
+        </section>
+
+      </div>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
