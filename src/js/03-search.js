@@ -5,10 +5,11 @@ function handlerSearch() {
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
       arrayShows = showsData;
-      if (arrayShows.lenght > 0) {
+      if (arrayShows.length === 0) {
+        renderShowNotFound();
       } else {
+        renderShows(arrayShows);
       }
-      renderShows(arrayShows);
     })
 
     .catch((error) => console.log("Inténtalo de nuevo más tarde", error));
