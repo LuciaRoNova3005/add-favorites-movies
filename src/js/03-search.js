@@ -8,7 +8,6 @@ function handlerSearch() {
       if (arrayShows.length === 0) {
         showcontainer.classList.add("hidden");
         showNotFound.classList.remove("hidden");
-        //renderShowNotFound();
       } else {
         showcontainer.classList.remove("hidden");
         showNotFound.classList.add("hidden");
