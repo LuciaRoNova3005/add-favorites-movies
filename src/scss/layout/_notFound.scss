@@ -1,7 +1,15 @@
 .shownotfound {
   margin: 20px;
+
   line-height: 30px;
+  @include tablet {
+    margin: 40px;
+  }
+  @include desktop {
+    margin: 60px;
+  }
 }
+
 .fa-frown {
   display: block;
   margin-top: 30px;
