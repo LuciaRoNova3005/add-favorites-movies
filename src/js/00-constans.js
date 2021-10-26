@@ -4,6 +4,7 @@ const search = document.querySelector(".js-search");
 const showcontainer = document.querySelector(".js-showlist");
 const favoritecontainer = document.querySelector(".js-favoritelist");
 const showNotFound = document.querySelector(".js-shownotfound");
+const NotFoundContainer = document.querySelector("js-notFoundContainer");
 let arrayShows = [];
 let arrayFavorite = [];
 let arrayLocal = [];
