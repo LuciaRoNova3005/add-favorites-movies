@@ -5,6 +5,9 @@ function handlerSearch() {
     .then((resultShow) => resultShow.json())
     .then((showsData) => {
       arrayShows = showsData;
+      if (arrayShows.lenght > 0) {
+      } else {
+      }
       renderShows(arrayShows);
     })
 
