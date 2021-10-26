@@ -19,6 +19,8 @@ function renderShows() {
     listHtml += `</li>`;
   }
   showcontainer.innerHTML = listHtml;
+  showNotFound.classList.add("hidden");
+  showcontainer.classList.remove("hidden");
 
   addListenShow();
 }
