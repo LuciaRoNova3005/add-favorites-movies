@@ -50,9 +50,9 @@ Almacenamiento local Hay que almacenar el listado de favoritos en el localStorag
 ### Afinar la maquetación responsive
 
 
-# ¿Quieres trabajar en este repositorio? 
+##¿Quieres trabajar en este repositorio? 
 
-## Clona este repositorio en tu equipo.
+### Clona este repositorio en tu equipo.
 
 Realiza la instalación del paquete y sus dependencias mediante:
 
