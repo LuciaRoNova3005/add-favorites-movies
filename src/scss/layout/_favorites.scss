@@ -1,5 +1,10 @@
 .container-fav {
-  margin: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+  @include tablet {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
 }
 .favtitle {
   margin-left: 30px;
@@ -27,6 +32,8 @@
   align-items: center;
   margin: 3px;
   background-color: lightseagreen;
+  @include tablet {
+  }
   @include desktop {
     display: flex;
     flex-direction: row;
@@ -73,6 +80,7 @@
   flex-direction: column;
   align-items: center;
   @include tablet {
+    margin-top: 10px;
     font-size: 18px;
     padding: 5px;
   }
