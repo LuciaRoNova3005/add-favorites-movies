@@ -1,11 +1,9 @@
 .container-fav {
   margin: 20px;
-
-  @include desktop {
-    margin: 30px;
-  }
 }
-
+.favtitle {
+  margin-left: 30px;
+}
 .title3 {
   font-size: 18px;
   text-align: center;
