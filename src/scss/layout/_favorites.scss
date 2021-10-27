@@ -6,6 +6,21 @@
   }
 }
 
+.title3 {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+  @include tablet {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  @include desktop {
+    font-size: 40px;
+  }
+}
+
 .favoritelist {
   display: flex;
   flex-direction: column;
@@ -47,17 +62,24 @@
     font-size: 20px;
   }
 }
-.title3 {
-  font-size: 18px;
-  text-align: center;
+.btndelete {
+  font-family: $font-main;
   color: white;
   font-weight: bold;
-
+  background-color: $color-primary;
+  border-color: grey;
+  background-color: lightseagreen;
+  margin: 3px;
+  text-align: center;
   @include tablet {
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 18px;
   }
   @include desktop {
-    font-size: 40px;
+    font-size: 30px;
+    margin-left: 30px;
+    padding: 10px;
   }
+}
+.fa-trash-alt {
+  text-align: center;
 }
