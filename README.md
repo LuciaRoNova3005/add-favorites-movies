@@ -1,26 +1,53 @@
 # Add Favorites Movies
 
-# ¿En qué consiste este proyecto?
+## ¿En qué consiste este proyecto?
 
-![image](https://user-images.githubusercontent.com/81588630/124917070-ad271a00-dff3-11eb-93da-7f0f29de3a25.png)
+![image](https://user-images.githubusercontent.com/81588630/139118167-22311981-ed9a-4915-adc0-0dc98aa6ef9c.png)
 
 
-# Aplicación de búsqueda
+## Aplicación de búsqueda
 La aplicación de búsqueda de series consta de dos partes:
 
-. Un campo de texto y un botón para buscar series por su título.
+. Un campo de texto y un botón para buscar series por su título.<br>
 . Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.
+
+
+Por cada show contenido en el resultado de la búsqueda hay que pintar una tarjeta donde mostramos una imagen de la serie y el título.
+En el caso de que el API no devuelva imagen para alguna serie, esta debe mostrar una imagen de relleno.
 
 ## Favoritos
 Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son nuestras series
-favoritas. Para ello, al hacer clic sobre una serie debe pasar lo siguiente:
-El color de fondo y el de fuente se intercambian, indicando que es una serie favorita.
-Hay que mostrar un listado en la parte izquierda de la pantalla, debajo del formulario de búsqueda,
-con las series favoritas. Os recomendamos crear un variable o constante de tipo array en JS para
-almacenar las series favoritas.
-Las series favoritas deben seguir apareciendo a la izquierda aunque la usuaria realice otra búsqueda.
+favoritas al ahcer click <br>
+Para ello, al hacer clic sobre una serie debe pasar lo siguiente:<br>
+La serie marcada aparece marcada como favorita.
+Hay que mostrar un listado, debajo del formulario de búsqueda, con las series favoritas.<br>
+Las series favoritas deben seguir apareciendo aunque la usuaria realice otra búsqueda.
+
+![image](https://user-images.githubusercontent.com/81588630/139119946-3d635ede-b800-4260-816c-f3c08d73cb63.png)
+
+
+
+## Estructura básica La aplicación de búsqueda de series consta de dos partes:
+
+Un campo de texto y un botón para buscar series por su título.<br>
+Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.<br>
+Búsqueda Al hacer clic sobre el botón de Buscar, la aplicación debe conectarse al API abierto de TVMaze para la búsqueda de series y construir la URL de búsqueda recogiendo el texto que ha introducido la usuaria en el campo de búsqueda.<br>
+
+Favoritos Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son sus series favoritas.
+
+## Borrar favoritos
+
+Al hacer clic sobre el icono de eliminar al lado de cada favorito, hay que borrar el favorito clicado de la lista y del localStorage.<br>
+Poder añadir/quitar como favorito al hacer clic sobre una serie. Si realizamos una nueva búsqueda y sale una serie que ya es favorita, aparezca ya resaltada en los resultados de búsqueda.<br>
+
+Incluir al final de la lista de favoritos un botón para borrar todos los favoritos a la vez.<br>
+
 
 ## Almacenamiento local
+Las series favoritas deben seguir apareciendo aunque la usuaria realice otra búsqueda.<br>
+Almacenamiento local Hay que almacenar el listado de favoritos en el localStorage. De esta forma, al recargar la página el listado de favoritos se debe mostrarse.
+
+### Afinar la maquetación responsive
 
 
 # ¿Quieres trabajar en este repositorio? 
@@ -71,32 +98,6 @@ src
  └─ html
     └─ partials
 ```
-
-## Enunciado y requisitos del ejercicio
-
-El ejercicio consiste en desarrollar una aplicación web de búsqueda de series de TV, que nos permite des/marcar las series como favoritas y guardarlas en local storage. El ejercicio también tiene una parte de maquetación con HTML y Sass.
-
-## Estructura básica La aplicación de búsqueda de series consta de dos partes:
-
-Un campo de texto y un botón para buscar series por su título.
-Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.
-Búsqueda Al hacer clic sobre el botón de Buscar, la aplicación debe conectarse al API abierto de TVMaze para la búsqueda de series y construir la URL de búsqueda recogiendo el texto que ha introducido la usuaria en el campo de búsqueda.
-
-Por cada show contenido en el resultado de la búsqueda hay que pintar una tarjeta donde mostramos una imagen de la serie y el título.
-En el caso de que el API no devuelva imagen para alguna serie, esta debe mostrar una imagen de relleno.
-Favoritos Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son sus series favoritas. Para ello, al hacer clic sobre una serie debe pasar lo siguiente:
-
-El color de fondo y el de fuente se intercambian, indicando que es una serie favorita.
-Hay que mostrar un listado en la parte izquierda de la pantalla, debajo del formulario de búsqueda, con las series favoritas.
-Las series favoritas deben seguir apareciendo a la izquierda aunque la usuaria realice otra búsqueda.
-Almacenamiento local Hay que almacenar el listado de favoritos en el localStorage. De esta forma, al recargar la página el listado de favoritos se debe mostrarse.
-
-## BONUS: Borrar favoritos
-
-Al hacer clic sobre el icono de una 'x' al lado de cada favorito, hay que borrar el favorito clicado de la lista y del localStorage.
-Poder añadir/quitar como favorito al hacer clic sobre una serie del lado de la derecha. Y que, si realizamos una nueva búsqueda y sale una serie que ya es favorita, aparezca ya resaltada en los resultados de búsqueda (con colores de fondo y texto intercambiados).
-Incluir al final de la lista de favoritos un botón para borrar todos los favoritos a la vez.
-BONUS: Afinar la maquetación Una vez terminada la parte de interacción, podemos centrarnos en la parte de maquetación donde tenemos libertad para decidir los estilos.
 
 ### ¿Consideras que puedo aplicar alguna mejora?
 Si has detectado un problema o consideras que alguna cosa puede mejorarse, estaría encantada de que habras un nuevo issue y conocer tu opinión, cada mejora es importante, muchas gracias.
