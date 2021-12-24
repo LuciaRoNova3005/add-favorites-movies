@@ -1,103 +1,108 @@
 # Add Favorites Movies
 
-## ¿En qué consiste este proyecto?
-
+# Statement and requirements of the exercise
+This exercise consists of a series search engine where you can select your favorite series and save them in localstorage<br>
 ![image](https://user-images.githubusercontent.com/81588630/139118167-22311981-ed9a-4915-adc0-0dc98aa6ef9c.png)
 
+### INDEX
+1. [Data structure](##Data-structure)
+2. [Search application](##Search-application)
+3. [Favorite](##Favorite)
+4. [Delete favorites](##Delete-favorites)
+5. [Local Storage](##Local-storage
 
-## Aplicación de búsqueda
-La aplicación de búsqueda de series consta de dos partes:
 
-. Un campo de texto y un botón para buscar series por su título.<br>
-. Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.
+## 1. Data Structure
 
+```
+src
+ ├─ api // los ficheros de esta carpeta se copian en public/api/
+ |  └─ data.json
+ ├─ images
+ |  └─ logo.jpg
+ ├─ js // the files in this folder are concatenated in the main.js file and this is saved in public / main.js
+ |  ├─ 00-constans.js
+ |  └─ 02-rendershow.js
+ |  └─ 03-search.js
+ |  └─ 04-fav.js
+ |  └─ 05-renderFav.js
+ |  └─ 07-localstorage.js
+ |  └─ 08-reset.js
+ |
+ ├─ scss
+ |  ├─ core
+ |  ├─ layout
+ |└─ mains.scss
+ └─ html
+    └─ partials
 
-Por cada show contenido en el resultado de la búsqueda hay que pintar una tarjeta donde mostramos una imagen de la serie y el título.
-En el caso de que el API no devuelva imagen para alguna serie, esta debe mostrar una imagen de relleno.
+```
+## 2. Search application
+The series search application consists of two parts:
+. A text field and a button to search for series by title. <br>
+. A list of search results where the poster of the series and the title appear.
 
-## Favoritos
-Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son nuestras series
-favoritas al ahcer click <br>
-Para ello, al hacer clic sobre una serie debe pasar lo siguiente:<br>
-La serie marcada aparece marcada como favorita.
-Hay que mostrar un listado, debajo del formulario de búsqueda, con las series favoritas.<br>
-Las series favoritas deben seguir apareciendo aunque la usuaria realice otra búsqueda.
+For each show contained in the search result, a card must be painted where we show an image of the series and the title.<br>
+In the case that the API does not return an image for some series, it must show a fill image.
+
+## 3. Favorites
+Once the search results appear, the user can indicate which are our series
+favorites when you click <br>
+To do this, when clicking on a series the following must happen: <br>
+The marked series is marked as a favorite.
+You have to show a list, below the search form, with your favorite series. <br>
+Favorite series should continue to appear even if the user performs another search.
 
 ![image](https://user-images.githubusercontent.com/81588630/139119946-3d635ede-b800-4260-816c-f3c08d73cb63.png)
 
 
+## Delete favorite
+Include a button at the end of the favorites list to delete all favorites at once. (included localstorage) <br>
 
-## Estructura básica La aplicación de búsqueda de series consta de dos partes:
+By clicking on the delete icon next to each favorite, you have to delete the clicked favorite from the list and from the localStorage. <br>
+Being able to add / remove as a favorite by clicking on a series. If we do a new search and a series that is already a favorite comes up, it will appear already highlighted in the search results. <br>
+![image](https://user-images.githubusercontent.com/81588630/147356192-d9be299b-e5d4-4c97-8f1b-24a2003f847f.png)
 
-Un campo de texto y un botón para buscar series por su título.<br>
-Un listado de resultados de búsqueda donde aparece el cartel de la serie y el título.<br>
-Búsqueda Al hacer clic sobre el botón de Buscar, la aplicación debe conectarse al API abierto de TVMaze para la búsqueda de series y construir la URL de búsqueda recogiendo el texto que ha introducido la usuaria en el campo de búsqueda.<br>
+## Local Storage
+Favorite series should continue to appear even if the user performs another search. <br>
+Local storage The list of favorites must be stored in the localStorage. In this way, when reloading the page the list of favorites should be shown.
 
-Favoritos Una vez aparecen los resultados de búsqueda, la usuaria puede indicar cuáles son sus series favoritas.
+## Technologies:
+ JS / SCSS
 
-## Borrar favoritos
+## STAR IN LOCAL
 
-Al hacer clic sobre el icono de eliminar al lado de cada favorito, hay que borrar el favorito clicado de la lista y del localStorage.<br>
-Poder añadir/quitar como favorito al hacer clic sobre una serie. Si realizamos una nueva búsqueda y sale una serie que ya es favorita, aparezca ya resaltada en los resultados de búsqueda.<br>
+### Clone this repository on your computer.
 
-Incluir al final de la lista de favoritos un botón para borrar todos los favoritos a la vez.<br>
-
-
-## Almacenamiento local
-Las series favoritas deben seguir apareciendo aunque la usuaria realice otra búsqueda.<br>
-Almacenamiento local Hay que almacenar el listado de favoritos en el localStorage. De esta forma, al recargar la página el listado de favoritos se debe mostrarse.
-
-### Afinar la maquetación responsive
-
-
-##¿Quieres trabajar en este repositorio? 
-
-### Clona este repositorio en tu equipo.
-
-Realiza la instalación del paquete y sus dependencias mediante:
+Install the package and its dependencies using:
 
 ### npm install
 
-Una vez finalizada la instalación encontrarás que se ha añadido una carpeta denominada node_modules/.
+Once the installation is complete you will find that a folder named node_modules / has been added.<br>
 
-Por último, ejecuta el siguiente comando para que cargue un servidor local y poder hacer la visualización:
+Finally, run the following command to load a local server and be able to do the visualization.
 
 ### npm start
 
-NOTA: Es necesario tener instalado NodeJS
+NOTE: It is necessary to have NodeJS installed
 
-## Flujo de archivos con Gulp
+### npm run docs
+Build the production app in the `docs` folder. \ <br>
+Correctly bundles React in production mode and optimizes build for best performance.
 
-Estas tareas de Gulp producen el siguiente flujo de archivos:
+## File flow with Gulp
+
+These Gulp tasks produce the following file stream:
 
 ![Gulp flow](./gulp-flow.png)
 
 ## `gulpfile.js` y `config.json`
 
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
+Our **gulpfile.js** uses the `config.json` configuration file with the paths of the files to generate / observe.<br>
 
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
+In this way we separate the actions that are in `gulpfile.js` from the configuration of the actions that are in` config.json`.
 
-## Estructura de carpetas
 
-La estructura de carpetas:
-
-```
-src
- ├─ images
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |      └─ 00-constans.js
-        └─ 02-rendershow.js
-        └─ 03-search.js
-        └─ 04-fav.js
-        └─ 05-renderFav.js
- ├─ scss
- |  ├─ core
- |  ├─ layout
- └─ html
-    └─ partials
-```
-
-### ¿Consideras que puedo aplicar alguna mejora?
-Si has detectado un problema o consideras que alguna cosa puede mejorarse, estaría encantada de que habras un nuevo issue y conocer tu opinión, cada mejora es importante, muchas gracias.
+## Do you think I can apply any improvement?
+If you have come this far, and you have detected a problem or consider that something can be improved, <br> 
+I would be delighted if you open a new issue and get your opinion, each improvement is important and necessary for me, thank you very much for your time.
